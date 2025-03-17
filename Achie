@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements</title>
+    <link rel="stylesheet" href="thea.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <h1>Food Reviews - Achievements</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="video.html">Post Video</a></li>
+        <li><a href="achievement.html" class="active">Achievements</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero">
+    <h2>My Achievements</h2>
+</header>
+
+<!-- Achievements Section -->
+<div class="achievements">
+    <div class="achievement-card">
+        <img src="chess.png" alt="Chess Champion">
+        <h3>Chess Champion (Girls Category)</h3>
+        <p>Winner of the Town Meet Chess Tournament.</p>
+    </div>
+
+    <div class="achievement-card">
+        <img src="honor.png" alt="Honor Award">
+        <h3>With Honors</h3>
+        <p>Recognized for outstanding academic achievements.</p>
+    </div>
+
+    <div class="achievement-card">
+        <img src="lyrist.png" alt="Lyrist Achievement">
+        <h3>Lyrist at DMDPNHS</h3>
+        <p>Member of the school’s music team, playing the lyre.</p>
+    </div>
+
+    <div class="achievement-card">
+        <img src="math.png" alt="Math Award">
+        <h3>Outstanding Performance in Math</h3>
+        <p>Achieved excellence in mathematics competitions.</p>
+    </div>
+</div>
+
+<!-- Back Button -->
+<div class="back-btn">
+    <a href="index.html">⬅ Back to Home</a>
+</div>
+
+<!-- CSS Fixes -->
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f4f4f4;
+    }
+
+    .navbar {
+        background: black;
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar ul li {
+        margin: 0 15px;
+    }
+
+    .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .hero {
+        background: yellow;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .achievements {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .achievement-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 250px;
+    }
+
+    .achievement-card img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .back-btn {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .back-btn a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #333;
+    }
+</style>
+
+</body>
+</html>

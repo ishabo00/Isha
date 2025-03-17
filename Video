@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="thea.css">
+    <style>
+        /* Full-page background */
+        body {
+            background-color: #d8b6ff; /* Light Purple */
+            color: #4a0072; /* Dark Purple Text */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #7a3db8; /* Medium Purple */
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            height: 40px; /* Adjust size */
+            margin-right: 10px;
+        }
+
+        .navbar-title {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Banner */
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 150px; /* Shorter height */
+            background: url('cats.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner-text {
+            position: absolute;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        /* Video Section */
+        .video-container {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        #videoDisplay iframe {
+            width: 100%;
+            height: 315px;
+            border: 5px solid #5a007a; /* Darker Purple Border */
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Image Gallery */
+        .image-gallery {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+        }
+
+        .gallery img {
+            width: 100px;
+            height: 80px;
+            border-radius: 10px;
+            border: 3px solid #5a007a; /* Dark Purple Border */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            margin: 5px;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar with Logo and Name -->
+<nav class="navbar">
+    <div class="navbar-left">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1 class="navbar-title">Portfolio</h1>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+</nav>
+
+<!-- Banner -->
+<div class="banner">
+    <h1 class="banner-text">Welcome to My Portfolio</h1>
+</div>
+
+<!-- Video Section -->
+<div class="video-container">
+    <h2>Travel Vlog</h2>
+    <div id="videoDisplay">
+        <iframe src="https://www.youtube.com/embed/zpIZnhNqvbI" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- Additional Video Section -->
+<div class="video-container">
+    <h2>New Travel Video</h2>
+    <div id="videoDisplay">
+        <iframe src="https://www.youtube.com/embed/1FV6o6V6wX8" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- Image Gallery -->
+<div class="image-gallery">
+    <h2>Photo Collection</h2>
+    <div class="gallery">
+        <img src="images/photo1.jpg" alt="Althea">
+        <img src="images/photo2.jpg" alt="Isha">
+        <img src="images/photo3.jpg" alt="Bautista">
+    </div>
+</div>
+
+</body>
+</html>
